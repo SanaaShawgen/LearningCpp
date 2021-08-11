@@ -26,15 +26,14 @@ public:
         {
             cout << "error, there is , in the name" << endl;
         }
-        else if (found2!=string::npos)
+        if (found2!=string::npos)
         {
             cout << "error, there is ' in the name" << endl;
         }
-        else if(found3!=string::npos)
+        if(found3!=string::npos)
         {
             cout << "error, there is ; in the name" << endl;
         }
-        
         else
         {
             m_name=name;
@@ -81,7 +80,7 @@ public:
 int main()
 {
     Player p;
-    p.Setname("sanaa");
+    p.Setname("sa,na;a");
     p.Sethp(90);
     p.Setlevel(55);
     p.print();
